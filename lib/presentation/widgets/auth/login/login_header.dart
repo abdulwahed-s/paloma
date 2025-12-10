@@ -12,6 +12,7 @@ class LoginHeader extends StatelessWidget {
         Container(
           height: 120,
           margin: const EdgeInsets.only(bottom: 32),
+          padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
             color: theme.colorScheme.primaryContainer,
             shape: BoxShape.circle,
