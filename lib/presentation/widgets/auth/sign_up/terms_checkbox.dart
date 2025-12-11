@@ -28,9 +28,7 @@ class TermsCheckbox extends StatelessWidget {
         Checkbox(
           value: value,
           onChanged: authController.isLoading ? null : onChanged,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(4),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         ),
         Expanded(
           child: Padding(
