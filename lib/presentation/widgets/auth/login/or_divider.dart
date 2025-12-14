@@ -9,25 +9,17 @@ class OrDivider extends StatelessWidget {
 
     return Row(
       children: [
-        Expanded(
-          child: Divider(
-            color: theme.colorScheme.outline,
-          ),
-        ),
+        Expanded(child: Divider(color: theme.colorScheme.outline)),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             'or',
             style: theme.textTheme.bodyMedium?.copyWith(
-              color: theme.colorScheme.onSurface.withOpacity(0.6),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
             ),
           ),
         ),
-        Expanded(
-          child: Divider(
-            color: theme.colorScheme.outline,
-          ),
-        ),
+        Expanded(child: Divider(color: theme.colorScheme.outline)),
       ],
     );
   }

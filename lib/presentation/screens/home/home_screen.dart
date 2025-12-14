@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
           // Add a subtle divider
           Container(
             height: 1,
-            color: colorScheme.outlineVariant.withOpacity(0.3),
+            color: colorScheme.outlineVariant.withValues(alpha: 0.3),
           ),
           Expanded(
             child: Obx(() {

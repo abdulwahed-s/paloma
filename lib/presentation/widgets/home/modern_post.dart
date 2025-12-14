@@ -43,10 +43,10 @@ class ModernPost extends StatelessWidget {
       decoration: BoxDecoration(
         color: colorScheme.surface,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: colorScheme.outline.withOpacity(0.1)),
+        border: Border.all(color: colorScheme.outline.withValues(alpha: 0.1)),
         boxShadow: [
           BoxShadow(
-            color: colorScheme.shadow.withOpacity(0.05),
+            color: colorScheme.shadow.withValues(alpha: 0.05),
             offset: const Offset(0, 2),
             blurRadius: 8,
           ),
@@ -135,7 +135,7 @@ class ModernPost extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
-          color: colorScheme.outline.withOpacity(0.2),
+          color: colorScheme.outline.withValues(alpha: 0.2),
           width: 1,
         ),
       ),
@@ -244,7 +244,7 @@ class ModernPost extends StatelessWidget {
               border: Border.all(
                 color: isLiked
                     ? colorScheme.primary
-                    : colorScheme.outline.withOpacity(0.3),
+                    : colorScheme.outline.withValues(alpha: 0.3),
               ),
             ),
             child: Row(
@@ -281,7 +281,9 @@ class ModernPost extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: colorScheme.outline.withOpacity(0.3)),
+              border: Border.all(
+                color: colorScheme.outline.withValues(alpha: 0.3),
+              ),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
@@ -331,7 +333,7 @@ class ModernPost extends StatelessWidget {
           borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               blurRadius: 20,
               offset: const Offset(0, -5),
             ),
@@ -345,7 +347,7 @@ class ModernPost extends StatelessWidget {
               height: 4,
               margin: const EdgeInsets.only(top: 12, bottom: 8),
               decoration: BoxDecoration(
-                color: colorScheme.outlineVariant.withOpacity(0.4),
+                color: colorScheme.outlineVariant.withValues(alpha: 0.4),
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -372,8 +374,8 @@ class ModernPost extends StatelessWidget {
                       size: 24,
                     ),
                     style: IconButton.styleFrom(
-                      backgroundColor: colorScheme.surfaceVariant.withOpacity(
-                        0.5,
+                      backgroundColor: colorScheme.surfaceVariant.withValues(
+                        alpha: 0.5,
                       ),
                       shape: const CircleBorder(),
                     ),
@@ -384,7 +386,7 @@ class ModernPost extends StatelessWidget {
             Divider(
               height: 1,
               thickness: 1,
-              color: colorScheme.outlineVariant.withOpacity(0.5),
+              color: colorScheme.outlineVariant.withValues(alpha: 0.5),
             ),
             Expanded(child: _buildUserProfile(context, userId)),
           ],
@@ -434,7 +436,7 @@ class ModernPost extends StatelessWidget {
                 Icon(
                   Icons.person_off_outlined,
                   size: 48,
-                  color: colorScheme.onSurfaceVariant.withOpacity(0.6),
+                  color: colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
                 ),
                 const SizedBox(height: 16),
                 Text(
@@ -449,7 +451,7 @@ class ModernPost extends StatelessWidget {
                 Text(
                   'This user may have been deleted or doesn\'t exist',
                   style: TextStyle(
-                    color: colorScheme.onSurfaceVariant.withOpacity(0.7),
+                    color: colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
                     fontSize: 14,
                   ),
                   textAlign: TextAlign.center,
@@ -475,13 +477,13 @@ class ModernPost extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      colorScheme.primaryContainer.withOpacity(0.3),
-                      colorScheme.secondaryContainer.withOpacity(0.2),
+                      colorScheme.primaryContainer.withValues(alpha: 0.3),
+                      colorScheme.secondaryContainer.withValues(alpha: 0.2),
                     ],
                   ),
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
-                    color: colorScheme.outline.withOpacity(0.1),
+                    color: colorScheme.outline.withValues(alpha: 0.1),
                   ),
                 ),
                 child: Column(
@@ -494,17 +496,17 @@ class ModernPost extends StatelessWidget {
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
                           colors: [
-                            colorScheme.primary.withOpacity(0.1),
-                            colorScheme.secondary.withOpacity(0.1),
+                            colorScheme.primary.withValues(alpha: 0.1),
+                            colorScheme.secondary.withValues(alpha: 0.1),
                           ],
                         ),
                         border: Border.all(
-                          color: colorScheme.primary.withOpacity(0.2),
+                          color: colorScheme.primary.withValues(alpha: 0.2),
                           width: 2,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: colorScheme.primary.withOpacity(0.1),
+                            color: colorScheme.primary.withValues(alpha: 0.1),
                             blurRadius: 12,
                             offset: const Offset(0, 4),
                           ),
@@ -553,7 +555,9 @@ class ModernPost extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                               boxShadow: [
                                 BoxShadow(
-                                  color: colorScheme.primary.withOpacity(0.3),
+                                  color: colorScheme.primary.withValues(
+                                    alpha: 0.3,
+                                  ),
                                   blurRadius: 4,
                                   offset: const Offset(0, 2),
                                 ),
@@ -665,9 +669,11 @@ class ModernPost extends StatelessWidget {
         const SizedBox(height: 12),
         Container(
           decoration: BoxDecoration(
-            color: colorScheme.surfaceVariant.withOpacity(0.3),
+            color: colorScheme.surfaceVariant.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: colorScheme.outline.withOpacity(0.1)),
+            border: Border.all(
+              color: colorScheme.outline.withValues(alpha: 0.1),
+            ),
           ),
           child: Column(children: items),
         ),
@@ -692,7 +698,7 @@ class ModernPost extends StatelessWidget {
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: colorScheme.primaryContainer.withOpacity(0.5),
+              color: colorScheme.primaryContainer.withValues(alpha: 0.5),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, color: colorScheme.primary, size: 20),
@@ -820,7 +826,7 @@ class ModernPost extends StatelessWidget {
                 color: colorScheme.surfaceVariant,
                 boxShadow: [
                   BoxShadow(
-                    color: colorScheme.shadow.withOpacity(0.05),
+                    color: colorScheme.shadow.withValues(alpha: 0.05),
                     offset: const Offset(0, -1),
                     blurRadius: 4,
                   ),
@@ -837,7 +843,7 @@ class ModernPost extends StatelessWidget {
                             color: colorScheme.surface,
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: colorScheme.outline.withOpacity(0.3),
+                              color: colorScheme.outline.withValues(alpha: 0.3),
                             ),
                           ),
                           child: TextField(
@@ -846,8 +852,8 @@ class ModernPost extends StatelessWidget {
                             decoration: InputDecoration(
                               hintText: 'Reply to $username',
                               hintStyle: TextStyle(
-                                color: colorScheme.onSurfaceVariant.withOpacity(
-                                  0.6,
+                                color: colorScheme.onSurfaceVariant.withValues(
+                                  alpha: 0.6,
                                 ),
                               ),
                               border: InputBorder.none,

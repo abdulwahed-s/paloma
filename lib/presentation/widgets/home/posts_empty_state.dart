@@ -30,7 +30,7 @@ class PostsEmptyState extends StatelessWidget {
             'Be the first to share something!',
             style: TextStyle(
               fontSize: 14,
-              color: colorScheme.onSurfaceVariant.withOpacity(0.7),
+              color: colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
             ),
           ),
         ],

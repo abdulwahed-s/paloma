@@ -227,7 +227,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 Text(
                   'Last updated: ${DateTime.now().toLocal().toString().split(' ')[0]}',
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurface.withOpacity(0.6),
+                    color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -301,7 +301,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 Text(
                   'Last updated: ${DateTime.now().toLocal().toString().split(' ')[0]}',
                   style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurface.withOpacity(0.6),
+                    color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -377,7 +377,7 @@ class _SignUpPageState extends State<SignUpPage> {
       child: Text(
         content,
         style: theme.textTheme.bodyMedium?.copyWith(
-          color: theme.colorScheme.onSurface.withOpacity(0.8),
+          color: theme.colorScheme.onSurface.withValues(alpha: 0.8),
           height: 1.5,
         ),
       ),

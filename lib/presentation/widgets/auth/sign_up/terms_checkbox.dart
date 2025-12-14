@@ -36,7 +36,7 @@ class TermsCheckbox extends StatelessWidget {
             child: RichText(
               text: TextSpan(
                 style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurface.withOpacity(0.8),
+                  color: theme.colorScheme.onSurface.withValues(alpha: 0.8),
                 ),
                 children: [
                   const TextSpan(text: 'I agree to the '),

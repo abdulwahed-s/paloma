@@ -17,7 +17,7 @@ class SignUpPrompt extends StatelessWidget {
         Text(
           "Don't have an account? ",
           style: theme.textTheme.bodyMedium?.copyWith(
-            color: theme.colorScheme.onSurface.withOpacity(0.7),
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
           ),
         ),
         TextButton(
@@ -32,9 +32,7 @@ class SignUpPrompt extends StatelessWidget {
           ),
           child: const Text(
             'Sign Up',
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-            ),
+            style: TextStyle(fontWeight: FontWeight.w600),
           ),
         ),
       ],

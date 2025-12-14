@@ -19,7 +19,7 @@ class MessageInput extends StatelessWidget {
         color: colorScheme.surface,
         boxShadow: [
           BoxShadow(
-            color: colorScheme.shadow.withOpacity(0.05),
+            color: colorScheme.shadow.withValues(alpha: 0.05),
             offset: const Offset(0, -1),
             blurRadius: 4,
           ),
@@ -36,7 +36,7 @@ class MessageInput extends StatelessWidget {
                     color: colorScheme.surfaceVariant,
                     borderRadius: BorderRadius.circular(24),
                     border: Border.all(
-                      color: colorScheme.outline.withOpacity(0.2),
+                      color: colorScheme.outline.withValues(alpha: 0.2),
                     ),
                   ),
                   child: TextField(
@@ -45,7 +45,9 @@ class MessageInput extends StatelessWidget {
                     decoration: InputDecoration(
                       hintText: 'What\'s on your mind?',
                       hintStyle: TextStyle(
-                        color: colorScheme.onSurfaceVariant.withOpacity(0.6),
+                        color: colorScheme.onSurfaceVariant.withValues(
+                          alpha: 0.6,
+                        ),
                       ),
                       border: InputBorder.none,
                       contentPadding: const EdgeInsets.symmetric(

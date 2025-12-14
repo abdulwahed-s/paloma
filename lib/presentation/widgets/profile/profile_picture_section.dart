@@ -24,7 +24,7 @@ class ProfilePictureSection extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: colorScheme.shadow.withOpacity(0.15),
+              color: colorScheme.shadow.withValues(alpha: 0.15),
               blurRadius: 20,
               offset: const Offset(0, 10),
             ),
@@ -38,7 +38,7 @@ class ProfilePictureSection extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: colorScheme.surface,
                 border: Border.all(
-                  color: colorScheme.outline.withOpacity(0.2),
+                  color: colorScheme.outline.withValues(alpha: 0.2),
                   width: 2,
                 ),
               ),
@@ -71,7 +71,7 @@ class ProfilePictureSection extends StatelessWidget {
                       // Loading overlay for picture change
                       if (isUploadingPicture)
                         Container(
-                          color: Colors.black.withOpacity(0.5),
+                          color: Colors.black.withValues(alpha: 0.5),
                           child: Center(
                             child: CircularProgressIndicator(
                               color: colorScheme.onPrimary,
@@ -93,7 +93,7 @@ class ProfilePictureSection extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                      color: colorScheme.shadow.withOpacity(0.2),
+                      color: colorScheme.shadow.withValues(alpha: 0.2),
                       blurRadius: 8,
                       offset: const Offset(0, 2),
                     ),

@@ -24,7 +24,7 @@ class HomeDrawer extends StatelessWidget {
               gradient: LinearGradient(
                 colors: [
                   colorScheme.primary,
-                  colorScheme.primary.withOpacity(0.8),
+                  colorScheme.primary.withValues(alpha: 0.8),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -48,7 +48,7 @@ class HomeDrawer extends StatelessWidget {
                     Text(
                       'Social Network',
                       style: TextStyle(
-                        color: colorScheme.onPrimary.withOpacity(0.8),
+                        color: colorScheme.onPrimary.withValues(alpha: 0.8),
                         fontSize: 14,
                       ),
                     ),

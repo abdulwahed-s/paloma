@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
-  const ProfileHeader({
-    super.key,
-    required this.colorScheme,
-  });
+  const ProfileHeader({super.key, required this.colorScheme});
 
   final ColorScheme colorScheme;
 
@@ -21,7 +18,7 @@ class ProfileHeader extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             colorScheme.primary,
-            colorScheme.primary.withOpacity(0.9),
+            colorScheme.primary.withValues(alpha: 0.9),
           ],
         ),
       ),
