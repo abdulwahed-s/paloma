@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  LoginHeader(),
+                  const LoginHeader(),
                   const SizedBox(height: 48),
                   LoginForm(
                     formKey: _formKey,
@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 32),
                   const OrDivider(),
                   const SizedBox(height: 24),
-                  SignUpPrompt(),
+                  const SignUpPrompt(),
                 ],
               ),
             ),

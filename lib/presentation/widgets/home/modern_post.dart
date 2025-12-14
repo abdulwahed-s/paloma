@@ -105,7 +105,7 @@ class ModernPost extends StatelessWidget {
                       posterUid == userId) {
                     return _buildDeleteButton(context);
                   }
-                  return SizedBox.shrink();
+                  return const SizedBox.shrink();
                 }),
               ],
             ),

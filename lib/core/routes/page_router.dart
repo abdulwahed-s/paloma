@@ -12,7 +12,7 @@ class PageRouter {
       case AppRoute.signUp:
         return PageRouteBuilder(
           settings: settings,
-          pageBuilder: (context, animation, __) => SignUpPage(),
+          pageBuilder: (context, animation, __) => const SignUpPage(),
           transitionsBuilder: (_, animation, __, child) {
             const begin = Offset(1.0, 0.0); 
             const end = Offset.zero;
