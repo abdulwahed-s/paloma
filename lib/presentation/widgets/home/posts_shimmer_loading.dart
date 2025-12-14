@@ -15,7 +15,7 @@ class PostsShimmerLoading extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 6),
           child: Shimmer.fromColors(
-            baseColor: colorScheme.surfaceVariant,
+            baseColor: colorScheme.surfaceContainerHighest,
             highlightColor: colorScheme.surface,
             child: Container(
               padding: const EdgeInsets.all(16),
@@ -32,7 +32,7 @@ class PostsShimmerLoading extends StatelessWidget {
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: colorScheme.surfaceVariant,
+                          color: colorScheme.surfaceContainerHighest,
                           shape: BoxShape.circle,
                         ),
                       ),
@@ -45,7 +45,7 @@ class PostsShimmerLoading extends StatelessWidget {
                               height: 12,
                               width: 100,
                               decoration: BoxDecoration(
-                                color: colorScheme.surfaceVariant,
+                                color: colorScheme.surfaceContainerHighest,
                                 borderRadius: BorderRadius.circular(6),
                               ),
                             ),
@@ -54,7 +54,7 @@ class PostsShimmerLoading extends StatelessWidget {
                               height: 10,
                               width: 60,
                               decoration: BoxDecoration(
-                                color: colorScheme.surfaceVariant,
+                                color: colorScheme.surfaceContainerHighest,
                                 borderRadius: BorderRadius.circular(5),
                               ),
                             ),
@@ -68,7 +68,7 @@ class PostsShimmerLoading extends StatelessWidget {
                     height: 14,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: colorScheme.surfaceVariant,
+                      color: colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(7),
                     ),
                   ),
@@ -77,7 +77,7 @@ class PostsShimmerLoading extends StatelessWidget {
                     height: 14,
                     width: 200,
                     decoration: BoxDecoration(
-                      color: colorScheme.surfaceVariant,
+                      color: colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(7),
                     ),
                   ),

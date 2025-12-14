@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
     final colorScheme = theme.colorScheme;
 
     return Scaffold(
-      backgroundColor: colorScheme.background,
+      backgroundColor: colorScheme.surface,
       appBar: HomeAppBar(colorScheme: colorScheme),
       drawer: HomeDrawer(
         colorScheme: colorScheme,

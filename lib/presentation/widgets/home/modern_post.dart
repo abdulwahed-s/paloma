@@ -145,14 +145,14 @@ class ModernPost extends StatelessWidget {
                 imageUrl: userPfp,
                 fit: BoxFit.cover,
                 errorWidget: (context, url, error) => Container(
-                  color: colorScheme.surfaceVariant,
+                  color: colorScheme.surfaceContainerHighest,
                   child: Icon(
                     Icons.person,
                     color: colorScheme.onSurfaceVariant,
                   ),
                 ),
                 placeholder: (context, url) => Container(
-                  color: colorScheme.surfaceVariant,
+                  color: colorScheme.surfaceContainerHighest,
                   child: Icon(
                     Icons.person,
                     color: colorScheme.onSurfaceVariant,
@@ -160,7 +160,7 @@ class ModernPost extends StatelessWidget {
                 ),
               )
             : Container(
-                color: colorScheme.surfaceVariant,
+                color: colorScheme.surfaceContainerHighest,
                 child: Icon(Icons.person, color: colorScheme.onSurfaceVariant),
               ),
       ),
@@ -207,7 +207,7 @@ class ModernPost extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: colorScheme.surfaceVariant,
+              color: colorScheme.surfaceContainerHighest,
               shape: BoxShape.circle,
             ),
             child: Icon(
@@ -374,9 +374,8 @@ class ModernPost extends StatelessWidget {
                       size: 24,
                     ),
                     style: IconButton.styleFrom(
-                      backgroundColor: colorScheme.surfaceVariant.withValues(
-                        alpha: 0.5,
-                      ),
+                      backgroundColor: colorScheme.surfaceContainerHighest
+                          .withValues(alpha: 0.5),
                       shape: const CircleBorder(),
                     ),
                   ),
@@ -669,7 +668,7 @@ class ModernPost extends StatelessWidget {
         const SizedBox(height: 12),
         Container(
           decoration: BoxDecoration(
-            color: colorScheme.surfaceVariant.withValues(alpha: 0.3),
+            color: colorScheme.surfaceContainerHighest.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: colorScheme.outline.withValues(alpha: 0.1),
@@ -823,7 +822,7 @@ class ModernPost extends StatelessWidget {
             Expanded(child: _buildRepliesList(context, postId)),
             Container(
               decoration: BoxDecoration(
-                color: colorScheme.surfaceVariant,
+                color: colorScheme.surfaceContainerHighest,
                 boxShadow: [
                   BoxShadow(
                     color: colorScheme.shadow.withValues(alpha: 0.05),
@@ -1050,7 +1049,7 @@ class ModernPost extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
           child: Shimmer.fromColors(
-            baseColor: colorScheme.surfaceVariant,
+            baseColor: colorScheme.surfaceContainerHighest,
             highlightColor: colorScheme.surface,
             child: Row(
               children: [

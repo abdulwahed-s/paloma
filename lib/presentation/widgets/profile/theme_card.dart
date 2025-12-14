@@ -19,7 +19,7 @@ class ThemeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
-      color: colorScheme.surfaceVariant,
+      color: colorScheme.surfaceContainerHighest,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
         side: BorderSide(
@@ -72,12 +72,12 @@ class ThemeCard extends StatelessWidget {
               () => Switch(
                 value: isDarkMode.value,
                 onChanged: (_) => onToggle(),
-                activeColor: colorScheme.primary,
-                trackColor: MaterialStateProperty.resolveWith((states) {
-                  if (states.contains(MaterialState.selected)) {
+                activeThumbColor: colorScheme.primary,
+                trackColor: WidgetStateProperty.resolveWith((states) {
+                  if (states.contains(WidgetState.selected)) {
                     return colorScheme.primaryContainer;
                   }
-                  return colorScheme.surfaceVariant;
+                  return colorScheme.surfaceContainerHighest;
                 }),
               ),
             ),

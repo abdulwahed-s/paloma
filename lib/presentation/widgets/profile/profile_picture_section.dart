@@ -54,7 +54,7 @@ class ProfilePictureSection extends StatelessWidget {
                         width: double.infinity,
                         height: double.infinity,
                         errorWidget: (context, url, error) => Container(
-                          color: colorScheme.surfaceVariant,
+                          color: colorScheme.surfaceContainerHighest,
                           child: Icon(
                             Icons.person,
                             size: 60,
@@ -62,7 +62,7 @@ class ProfilePictureSection extends StatelessWidget {
                           ),
                         ),
                         placeholder: (context, url) => Container(
-                          color: colorScheme.surfaceVariant,
+                          color: colorScheme.surfaceContainerHighest,
                           child: CircularProgressIndicator(
                             color: colorScheme.primary,
                           ),

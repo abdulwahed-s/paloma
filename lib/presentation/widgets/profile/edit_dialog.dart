@@ -78,7 +78,7 @@ class _EditDialogState extends State<EditDialog> {
             ),
           ),
           filled: true,
-          fillColor: colorScheme.surfaceVariant,
+          fillColor: colorScheme.surfaceContainerHighest,
         ),
       ),
       backgroundColor: colorScheme.surface,
